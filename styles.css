@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TYPES */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CONTAINERS */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 10px;
+}
+
+.split-container {
+  display: flex;
+  gap: 20px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TYPOGRAPHY */
+.capitalize::first-letter {
+  text-transform: capitalize;
+}
+
+/* IMAGES */
+.header-image {
+  object-fit: fill;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
