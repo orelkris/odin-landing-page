@@ -3,21 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Krisassaurus Book Club</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <nav></nav>
-        <section></section>
+        <nav>
+          <div class="logo">header logo</div>
+          <ul class="nav-links">
+            <li><a>header link one</a></li>
+            <li><a>header link two</a></li>
+            <li><a>header link three</a></li>
+          </ul>
+        </nav>
+        <section class="split-container">
+          <div class="left-container">
+            <h1 class="capitalize">this website is awesome</h1>
+            <p class="capitalize">
+              this website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="capitalize">sign up</button>
+          </div>
+          <div class="left-container">
+            <div class="header-image">
+              <img
+                src="./images/books.jpg"
+                alt="bookshelves filled with many books"
+                width="300"
+              />
+            </div>
+          </div>
+        </section>
       </header>
       <main>
-        <section class="books"></section>
-        <section class="quote"></secti>
-        <section class="signup"></section>
+        <section class="section-container">
+          <h2 class="capitalize">some random information</h2>
+          <div class="books-container">
+            <div class="book-card">
+              <div class="book-image"></div>
+              <div class="book-content">
+                this is some subtext under an illustration or image
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="book-image"></div>
+              <div class="book-content">
+                this is some subtext under an illustration or image
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="book-image"></div>
+              <div class="book-content">
+                this is some subtext under an illustration or image
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="book-image"></div>
+              <div class="book-content">
+                this is some subtext under an illustration or image
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-container">
+          <blockquote cite="" class="capitalize">
+            <p class="capitalize">this is an inspiring quote!</p>
+            <footer class="capitalize quote-footer">
+              thor, god of thunder
+            </footer>
+          </blockquote>
+        </section>
+        <section class="section-container">
+          <article class="call-to-action-card">
+            <div class="content">
+              <h4>call to action! it's time</h4>
+              <p>
+                sign up for out product by clicking that button right over
+                there!
+              </p>
+            </div>
+            <button class="button">Sign up</button>
+          </article>
+        </section>
       </main>
-      <footer></footer>
+      <footer class="capitalize">copyright &copy; the odin project 2025</footer>
     </div>
   </body>
 </html>
