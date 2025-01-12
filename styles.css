@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-family: "Roboto", serif;
 }
 
 /* TYPES */
@@ -13,60 +18,97 @@ ul {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
-/* CONTAINERS */
-.wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 50px;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links-container {
-  display: flex;
-  gap: 10px;
-}
-
-.split-container {
-  display: flex;
-  gap: 20px;
-}
-
-.section-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* TYPOGRAPHY */
-.capitalize::first-letter {
+.cap-first:first-letter {
   text-transform: capitalize;
 }
 
-/* IMAGES */
-.header-image {
-  object-fit: fill;
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* HEADER */
+.header--wrapper-outer {
+  background-color: #1f2937;
+  padding: 0 16px;
+}
+
+.header--wrapper-inner {
+  max-width: 800px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  color: #fff;
+}
+
+.header--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+}
+
+.header--nav-logo {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.header--nav-links {
+  color: #e5e7eb;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.header--content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 8px;
+  padding: 36px 0;
+}
+
+.header--content-l,
+.header--content-r {
+  flex: 1 0 calc(50% - 8px);
+}
+
+.header--content-l {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.header--content-l h1 {
+  color: #f9faf8;
+  font-size: 48px;
+}
+
+.header--content-l p {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.header--content-l button {
+  color: inherit;
+  background-color: #3882f6;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.header--content-r img {
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 8px;
   width: 100%;
-  height: 200px;
-  overflow: hidden;
+  height: 100%;
 }
