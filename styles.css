@@ -112,3 +112,46 @@ a {
   width: 100%;
   height: 100%;
 }
+
+/* BOOKS */
+.books--wrapper-outer {
+  background-color: #f9faf8;
+  padding: 0 16px;
+}
+
+.books--wrapper-inner {
+  max-width: 800px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  padding: 24px 0;
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 150px;
+  text-align: center;
+}
+
+.book > div,
+.book > p {
+  width: 150px;
+}
+
+.book > div {
+  height: 150px;
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+}
