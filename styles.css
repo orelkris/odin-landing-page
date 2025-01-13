@@ -61,15 +61,26 @@ button {
 }
 
 .header--nav-logo {
+  font-family: "Playwrite DK Loopet Guides", serif;
   color: #f9faf8;
   font-size: 24px;
+  font-style: italic;
+  /* font-weight: 900; */
 }
 
 .header--nav-links {
   color: #e5e7eb;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 16px;
+}
+
+.header--nav-links a {
+  transition: 0.3s;
+}
+
+.header--nav-links a:hover {
+  color: #3882f6;
 }
 
 .header--content {
@@ -101,11 +112,18 @@ button {
 .header--content-l p {
   color: #e5e7eb;
   font-size: 18px;
+  font-weight: 200;
 }
 
 .header--content-l button {
   color: inherit;
   background-color: #3882f6;
+  transition: 0.3s;
+}
+
+.header--content-l button:hover {
+  opacity: 75%;
+  cursor: pointer;
 }
 
 .header--content-r img {
