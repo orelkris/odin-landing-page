@@ -241,3 +241,18 @@ button {
   border: 1px solid #fff;
   align-self: center;
 }
+
+/* FOOTER */
+.footer--wrapper-outer {
+  background-color: #1f2937;
+  padding: 0 16px;
+}
+
+.footer--wrapper-inner {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
