@@ -21,6 +21,12 @@ a {
   color: #fff;
 }
 
+button {
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 .cap-first:first-letter {
   text-transform: capitalize;
 }
@@ -100,9 +106,6 @@ a {
 .header--content-l button {
   color: inherit;
   background-color: #3882f6;
-  padding: 4px 16px;
-  border-radius: 4px;
-  font-weight: 600;
 }
 
 .header--content-r img {
@@ -187,4 +190,54 @@ a {
 
 .quote--wrapper-inner cite::before {
   content: "—";
+}
+
+/* CALL TO ACTION */
+.cta--wrapper-outer {
+  background-color: #f9faf8;
+  padding: 0 16px;
+}
+
+.cta--wrapper-inner {
+  max-width: 800px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin: auto;
+  padding: 24px 0;
+}
+
+.cta--card-outer {
+  background-color: #3882f6;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.cta--card-inner {
+  margin: auto;
+  max-width: 80%;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cta--card-content h3 {
+  font-size: 16px;
+}
+
+.cta--card-content p {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.cta--card-inner button {
+  background-color: #3882f6;
+  color: #fff;
+  border: 1px solid #fff;
+  align-self: center;
 }
