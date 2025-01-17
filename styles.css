@@ -176,6 +176,15 @@ button {
   border-radius: 10px;
 }
 
+.book--link {
+  transition: 0.3s;
+}
+
+.book--link:hover {
+  opacity: 75%;
+  transform: scale(105%);
+}
+
 /* QUOTE */
 .quote--wrapper-outer {
   background-color: #e5e7eb;
